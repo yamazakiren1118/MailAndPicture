@@ -1,0 +1,6 @@
+<h1>Topics#new</h1>
+<p>Find me in app/views/topics/new.html.erb</p>
+<%= form_with model: @topic do |form| %>
+ <%= form.file_field :image_name %>
+ <%= form.submit %>
+<% end %>

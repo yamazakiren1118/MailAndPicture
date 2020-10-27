@@ -1,0 +1,8 @@
+<h1>Mails#new</h1>
+<p>Find me in app/views/mails/new.html.erb</p>
+<%= form_with scope: :user,url: '/user' do |form| %>
+  <%= form.text_field :title %>
+  <%= form.text_field :email %>
+  <%= form.text_area :content %>
+  <%= form.submit %>
+<% end %>
