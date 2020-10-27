@@ -51,6 +51,7 @@ production:
   <<: *default
   adapter: postgresql
   encoding: unicode
+  pool: 5
   database: MailAndPicture_production
   username: MailAndPicture
   password: <%= ENV['MAILANDPICTURE_DATABASE_PASSWORD'] %>
