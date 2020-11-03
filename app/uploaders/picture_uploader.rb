@@ -7,7 +7,7 @@ class PictureUploader < CarrierWave::Uploader::Base
   if Rails.env.produvtion?
     include Cloudinary::CarrierWave
     CarrierWave.configure do |config|
-      config.cache_storage = :file
+      config.cache_storage = :fog
     end
   else
     storage :file
