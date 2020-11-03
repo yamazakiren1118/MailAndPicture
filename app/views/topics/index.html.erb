@@ -1,3 +1,3 @@
 <% @topic.each do |topic| %>
-  <%= image_tag topic.image_name.to_s %>
+  <%= image_tag post.img_url, :cloud_name => ENV['CLOUDINARY_CLOUD_NAME']  if post.img? %>
 <% end %>
