@@ -3,7 +3,7 @@ class TopicsController < ApplicationController
     @topic = Topic.new
   end
   def create
-    binding.pry
+    # binding.pry
     @topic = Topic.new(image_name: params[:topic][:image_name])
     if @topic.save
       puts 'OK create'
